@@ -1,0 +1,15 @@
+apiVersion: v2
+name: workshop-test
+description: A Helm chart for Kubernetes
+type: application
+dependencies:
+  - name: lab1
+    repository: oci://ghcr.io/alinae5/helm/lab1
+    version: "1.0.0"
+    alias: deploy1
+  - name: workshop-test
+    repository: oci://ghcr.io/alinae5/helm/lab1
+    version: 1.0.1
+    alias: deploy2  
+version: 1.0.0
+appVersion: "1.0.0"
